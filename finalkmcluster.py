@@ -57,6 +57,20 @@ print("\nnumber of cluster with max silhouette scores: \n",
 	silhouette_result.index(max(silhouette_result))+2)
 
 
+##GMM
+from sklearn.mixture import GaussianMixture
+def run_gmm(n, data):
+	gmm_machine = GaussianMixture(n_components=n)
+	gmm_results = gmm_machine.fit_predict(data)
+	silhouette = 0
+	if n > 1:
+		silhouette = (silhouette_score(data, gmm_results, metric = 'euclidean'))
+		print(silhouette)
+	return silhouette
+
+gmmresult = [ run_gmm(i+1, data) for i in range(7)]
+print(gmmresult)
 
 
-	
+
+
