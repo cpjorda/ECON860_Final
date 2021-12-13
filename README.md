@@ -13,4 +13,4 @@ To run the first clustering program, run the program titled finalkmclustering.py
 1e) The optimal number of clusters using kmeans seems to be 3. 
 1f) It isn't clear which algorithm would be better, since we have no way of visualizing the spread of the data in a 3 dimensional manner and there isn't a comparitive statistic which can be used to compare the algorithms and get a clear-cut "better" program. Comparing the silouette scores and ssd's provides some insight into how well they cluster, but comapring the two is still ambiguous. 
 
-1g) Yes, different countries give different answers, as they get factored out differently when analyzed, likely due to cultural differences of some kind.
+1g) Yes, different countries give different answers, as they get factored out differently when analyzed, likely due to cultural differences of some kind. (To find this answer, create a data frame for your country of interest and run the previous codes mentioned earlier, using this data frame rather than the entire dataset. 
