@@ -26,7 +26,7 @@ pyplot.scatter(range(1,dataset.shape[1]+1), ev)
 pyplot.savefig("plot.png")
 pyplot.close()
 
-machine = FactorAnalyzer(n_factors=3, rotation='varimax')
+machine = FactorAnalyzer(n_factors=4, rotation='varimax')
 machine.fit(dataset)
 output = machine.loadings_
 numpy.set_printoptions(suppress=True)
